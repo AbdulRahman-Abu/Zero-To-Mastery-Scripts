@@ -1,0 +1,49 @@
+let database = [
+    { 
+      username: "raybaba",
+      password: "raybaba"
+    },
+    {
+      username: "abdul",
+      pasword: "abdul"
+    }
+];
+
+let newsfeed = [
+    {
+     username: "Bobby",
+     timeline: "JavaScript is awesome"
+    },
+    
+    {
+      username: "Sally",
+      timeline: "HNG is going on well"
+    }
+];
+
+var userNamePrompt = prompt("What\ 's your name?");
+var passWordPrompt = prompt("What\ 's your password?");
+
+function isUserValid(user, pass) {
+    for (var i = 0; i < database.length; i++) {
+       if (user === database[i].username &&
+           pass === database[i].password) {
+           return true;
+    }
+} 
+return false;
+}
+
+function signIn(username, password) { 
+    if (isUserValid(username, password)) { // password and username here were received from signIn prompt
+        console.log(newsfeed);
+    }
+    else {
+        alert("sorry, wrong username and password!")
+    }
+    };
+signIn(userNamePrompt, passWordPrompt);
+
+// NOTE
+// THE FIRST FUNCTION THAT RUNS IS: signIn(userNamePrompt, passWordPrompt);
+// THEN IT TRAVELS TO FUNCTION: function signIn(username, password) 
