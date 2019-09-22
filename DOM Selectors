@@ -1,0 +1,45 @@
+
+document.getElementById
+document.getElementsByTagName
+document.getElementsByClassName
+
+document.querySelector
+document.querySelectorAll
+
+getAttribute
+setAttribute
+
+EXAMPLE SCRIPT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shopping List</h1>
+    <p id="first">Get it done today</p>
+    <p class="second">No excuse</p>
+    <ul>
+        <li random="23">Notebook</li>
+        <li>Jello</li>
+        <li>Spinach</li>
+        <li>Rice</li>
+        <li>Birthday Cake</li>
+        <li>Candels</li>
+    </ul>   
+</body>
+<script type="text/javascript" src="test.js"></script>
+</html>
+
+USAGE
+document.querySelector("h1"); // Ans <h1>Shopping List</h1>
+document.querySelector("li"); // Ans: <li random="23">Notebook</li>
+document.querySelectorAll("li"); // Ans: All li elements are selected
+document.querySelectorAll("li, h1"); // Ans: All li and h1 elements are selected
+document.getElementById("first"); // Ans: <p id="first">Get it done today</p>
+document.getElementsByClassName("second")[0]; // Ans: <p class="second">No excuse</p>
+document.querySelector("li").getAttribute("random"); // Ans 23
+document.querySelector("li").setAttribute("random", "1000"); Ans: <li random="1000">Notebook</li>
