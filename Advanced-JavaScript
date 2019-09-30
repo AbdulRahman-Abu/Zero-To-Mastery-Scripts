@@ -1,0 +1,20 @@
+TERNARY OPERATORS
+
+function isUserValid(bool) {
+  return bool;
+};
+
+var answer = isUserValid(true) ? "You can enter" : "Access Denied";
+
+The above is ternary operator. The ternary operator above and the below function will give same answers when called
+OR
+
+function condition() {
+  if (isUserValid) {
+    return "You can enter";
+  } else
+    { 
+      return "Access Denied";
+ }
+};
+
