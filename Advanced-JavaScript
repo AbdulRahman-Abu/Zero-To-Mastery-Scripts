@@ -50,3 +50,49 @@ moveCommand("forward");
 window.moveCommand("back");
 
 
+const, let
+After learning const and let dont use var again.
+If you have anything that should not change eg a name, use const
+A function could also be a const if you feel the assignment will not change eg
+const a = function() {
+ console.log(a);
+}
+
+use let when you know your var will change eg true to false
+
+you can change the properties in a const object but you just cant reassign the var eg
+const obj = {
+  name: "Bobby",
+  married: "single",
+  age: 20
+}
+we can reassign 
+obj.married = "married";
+
+but we can not reasign 
+obj = "hey" // error //
+
+DESTRUCTURING
+
+
+const obj = {
+    player: "Bobby",
+    experience: 100,
+    wizardLevel: false
+}
+obj.player;
+obj.experience;
+let wizardLevel = obj.wizardLevel;
+
+const { player, experience} = obj;
+let { wizardLevel} = obj;
+
+say we want to grab the properties of obj, ordinarily we would do;
+const player = obj.player;
+const experience = obj.experience;
+let wizardLevel = obj.wizardLevel;
+
+But with destructuring, it become easier;
+const{ player, experience} = obj;
+let {wizardLevel} = obj;
+it means: get const player, experience from the obj

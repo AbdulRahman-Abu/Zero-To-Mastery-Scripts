@@ -1,0 +1,5 @@
+ES6 AND ES5 syntax.
+We will now use new syntax for ES6
+
+let and const: no more using var
+Anytime let is added inside { }, it creates a new scope known to it only.
